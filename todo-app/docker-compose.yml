@@ -1,0 +1,15 @@
+version: '3'
+services:
+  db:
+    image: mongo:3.4
+    ports:
+      - 27017:27017
+  # backend:
+  #   image: node:10.13.0
+  #   volumes:
+  #     - ./backend:/backend
+  #   ports:
+  #     - 3000:3000
+  #   command: bash -c "cd /backend && npm install && npm run dev"
+  #   depends_on:
+  #     - db
